@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  background: url(../img/asset/beige.png);
+}
+
+.bg-navbar {
+  background-color: #479f76;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.arrow {
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#arrow {
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.sidebar-heading {
+  background-color: #aec987;
+}
+
+#list-bar {
+  background-color: #cac588;
+}
+
+.profile-info {
+  background-color: #eee;
+}
+
+.profile-info .d-flex div {
+  margin-left: 1rem;
+}
+
+.containerUnggah {
+  background-color: #eee;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
+}
+
+.containerUnggah form .foto {
+  width: 30%;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 1rem auto;
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+}
+
+.containerUnggah form .foto img {
+  width: 100%;
+}
+
+.containerUnggah form .foto input {
+  display: none;
+}
+
+.containerUnggah form input,
+.containerUnggah form select,
+.containerUnggah form label {
+  display: block;
+}
+
+.containerUnggah form input,
+.containerUnggah form select {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: inherit;
+}
+
+.containerUnggah form input[name="namaResep"],
+.containerUnggah form input[name="deskripsi"],
+.containerUnggah form select[name="kategori"] {
+  width: 100%;
+}
+
+.containerUnggah form .d-flex {
+  margin-top: 1rem;
+}
+
+.containerUnggah form .d-flex input {
+  width: 90%;
+}
+
+.containerUnggah form .d-flex button {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 10%;
+}
+
+.containerUnggah form textarea#deskripsi {
+  width: 100%;
+  display: block;
+  height: 7rem;
+}
+
+.recipe-view {
+  background-color: #eee;
+  margin-top: 5rem;
+}
+
+.recipe-view div img {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.recipe-view div a {
+  text-decoration: none;
+}
+
+.recipe-view div a img {
+  height: 100%;
+}
+
+.komen {
+  background-color: #eee;
+}
+
+.foto {
+  width: 30%;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 1rem auto;
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+}
+
+.foto img {
+  width: 100%;
+}
+
+.foto input {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  #logout {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 769.98px) {
+  .profile-info .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile-info .d-flex hr {
+    opacity: .25;
+  }
+  .recipe-card .time {
+    font-size: .8rem;
+  }
+  .recipe-card .kategori {
+    font-size: .8rem;
+  }
+  .recipe-card .porsi {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 769.98px) {
+  .recipe-view div.d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 770px) {
+  .recipe-view div.d-flex div {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 830px) {
+  i.fa-plus,
+  i.fa-trash {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .containerUnggah form .foto {
+    width: 50%;
+  }
+}

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+// body
+body {
+    background: url(../img/asset/beige.png);
+}
+
+// index
+.bg-navbar {
+    background-color: #479f76;
+}
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.arrow {
+    transition: 0.25s ease-out;
+    transform: rotate(180deg);
+}
+#arrow {
+    transition: 0.25s ease-out;
+}
+.sidebar-heading {
+    background-color: #aec987;
+}
+#list-bar {
+    background-color: #cac588;
+}
+
+// profile
+.profile-info{
+    background-color: #eee;
+    .d-flex{
+        div{
+        margin-left: 1rem;
+        }
+    }
+}
+
+// unggah
+.containerUnggah {
+    background-color: #eee;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    box-shadow: 1px 1px 3px black;
+    form {
+        .foto {
+            width: 30%;
+            border: 2px solid white;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            overflow: hidden;
+            margin: 1rem auto;
+            box-shadow: 1px 1px 2px black;
+            img {
+                width: 100%;
+            }
+            input {
+                display: none;
+            }
+        }
+        input,
+        select,
+        label {
+            display: block;
+        }
+        input,
+        select {
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 10px;
+            font-family: inherit;
+        }
+        input[name="namaResep"],
+        input[name="deskripsi"],
+        select[name="kategori"] {
+            width: 100%;
+        }
+        .d-flex {
+            margin-top: 1rem;
+            input {
+                width: 90%;
+            }
+            button {
+                height: min-content;
+                width: 10%;
+            }
+        }
+        textarea#deskripsi {
+            width: 100%;
+            display: block;
+            height: 7rem;
+        }
+    }
+}
+
+// recipe view
+.recipe-view {
+    background-color: #eee;
+    margin-top: 5rem;
+    div {
+        img {
+            height: min-content;
+        }
+        a {
+            text-decoration: none;
+        img {
+            height: 100%;
+        }
+        }
+    }
+}
+.komen {
+    background-color: #eee;
+
+}
+
+// profile & unggah_resep
+.foto {
+    width: 30%;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 1rem auto;
+    box-shadow: 1px 1px 2px black;
+    img {
+        width: 100%;
+    }
+    input {
+        display: none;
+    }
+}
+
+// index media query
+@media (max-width: 991.98px){
+    #logout { 
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+// profile media query
+@media (max-width: 769.98px) {
+    .profile-info {
+        .d-flex {
+        flex-direction: column;
+            hr{
+                opacity: .25;
+            }
+        }
+    }
+    .recipe-card{
+        .time{
+        font-size: .8rem;
+        }
+        .kategori{
+        font-size: .8rem;
+        }
+        .porsi{
+        font-size: .8rem;
+        }
+    }
+}
+
+// view media query
+@media (max-width: 769.98px) {
+    .recipe-view {
+        div.d-flex {
+            flex-direction: column;
+        }
+    }
+}
+@media (min-width: 770px) {
+    .recipe-view {
+        div.d-flex {
+            div {
+            margin-left: 1rem;
+            }
+        }
+    }
+}
+
+// unggah media quey
+@media (max-width: 830px) {
+    i.fa-plus,
+    i.fa-trash {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .containerUnggah{
+        form{ 
+            .foto{ 
+                width: 50%;
+            }
+        }
+    }
+}
